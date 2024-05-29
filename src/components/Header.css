@@ -1,0 +1,135 @@
+.navbar {
+  background-color: #f8f9fa; /* Light grey background */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #343a40; /* Dark grey text */
+}
+
+.nav-link {
+  color: #343a40;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #007bff; /* Blue text on hover */
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #dc3545;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 50%;
+  font-size: 0.75rem;
+}
+
+.avatar-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-icon-container {
+  position: relative;
+}
+
+.dropdown-menu-right {
+  right: 0;
+  left: auto;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+.profile-icon-container:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+
+.navbar-brand {
+  padding-left: 2rem;
+  font-weight: bold;
+}
+
+.navbar-nav .icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+
+.navbar-nav .nav-item:not(:last-child) .nav-link {
+  margin-right: 1rem;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.navbar-nav .nav-item.dropdown {
+  position: relative;
+}
+
+.navbar-nav .nav-item.dropdown .nav-link {
+  cursor: pointer;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: auto;
+  background-color: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  min-width: 160px;
+  padding: 0.5rem 0;
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+  padding: 0.25rem 1.5rem;
+  color: #212529;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+.avatar-icon {
+  border-radius: 50%;
+}
+
+/* Ensure dropdown menu stays within viewport */
+@media (max-width: 767px) {
+  .navbar-nav .nav-item.dropdown .dropdown-menu {
+    right: auto;
+    left: 0;
+  }
+}
